@@ -1,11 +1,10 @@
 import enum
 
 
-class Services(enum):
-    DROPBOX = 1,
+class Services:
+    DROPBOX = 1
     DRIVE = 2
 
-    @staticmethod
     def get_service_from_string(string):
         if str(string).startswith("DROPBOX"):
             return Services.DROPBOX

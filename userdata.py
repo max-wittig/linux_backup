@@ -1,12 +1,10 @@
 class UserData:
-    def __init__(self, username, password, service):
-        self.username = username
+    def __init__(self, access_token, service):
+        self.access_token = access_token
         self.service = service
-        self.password = password
 
     def to_object(self):
         json_object = {
-            "username": self.username,
-            "password": self.password
+            "access_token": self.access_token
         }
         return json_object

@@ -1,13 +1,14 @@
 import json
 
 
-class UserdataSaver:
-    def __init__(self, userdata):
-        self.userdata = userdata
+class UserdataHandler:
+    def __init__(self):
+        self.filename = "app_secrets.json"
 
-    def save(self)
-        with open(self.userdata.service, "w") as f:
-            f.write(json.dumps(self.userdata.to_object()))
+    def save(self, userdata):
+        with open(self.filename, "w") as f:
+            f.write(json.dumps(userdata.to_object()))
 
     def load(self):
-        pass
+        with open(self.filename, "r") as f:
+            return json.loads(f.read())
