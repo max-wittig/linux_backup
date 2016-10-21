@@ -16,4 +16,5 @@ class DropboxConnector:
         self.dropbox = dropbox.Dropbox(self.access_token)
 
     def upload(self, filename):
-        print(self.dropbox.upload)
+        with open(filename, "rb") as f:
+            self.dropbox.files_upload(f, "/" + filename)

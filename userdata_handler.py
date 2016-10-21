@@ -3,7 +3,11 @@ import json
 
 class UserdataHandler:
     def __init__(self):
-        self.filename = "app_secrets.json"
+        self.debug = True
+        if self.debug:
+            self.filename = "app_secrets.json"
+        else:
+            self.filename = "app_secrets_release.json"
 
     def save(self, userdata):
         with open(self.filename, "w") as f:
