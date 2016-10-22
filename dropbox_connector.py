@@ -1,5 +1,6 @@
 import dropbox
 from userdata_handler import *
+import os
 
 
 class DropboxConnector:
@@ -18,3 +19,4 @@ class DropboxConnector:
     def upload(self, filename):
         with open(filename, "rb") as f:
             self.dropbox.files_upload(f, "/" + filename)
+        print(filename + " uploaded successfully")
