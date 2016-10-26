@@ -3,3 +3,7 @@
 __pycache__/
 app_secrets.json
 *.zip
+app_secrets2.json
+backups/
+client_secrets.json
+LinuxBackup.iml
