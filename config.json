@@ -1,0 +1,8 @@
+{
+  "gdrive_dir_id": "0BxzwX_i76rPESm1USlhweGwtMWs",
+  "gdrive_bin": "gdrive-linux-rpi",
+  "directories_to_backup":
+          [
+              "/home/max/"
+          ]
+}

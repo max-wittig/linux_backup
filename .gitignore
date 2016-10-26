@@ -7,3 +7,5 @@ app_secrets2.json
 backups/
 client_secrets.json
 LinuxBackup.iml
+gdrive_bin/gdrive-linux-x64
+gdrive_bin/gdrive-linux-rpi

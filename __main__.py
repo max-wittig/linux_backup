@@ -5,7 +5,7 @@ from services import Services
 
 def get_args():
     parser = argparse.ArgumentParser("Linux Backup")
-    parser.add_argument("-s", "--service", help="dropbox|drive")
+    parser.add_argument("-s", "--service", help="drive", default="drive")
     return vars(parser.parse_args())
 
 
