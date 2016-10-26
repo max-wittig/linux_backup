@@ -3,6 +3,6 @@
   "gdrive_bin": "gdrive-linux-rpi",
   "directories_to_backup":
           [
-              "/home/max/"
+              "/home/pi/"
           ]
 }
