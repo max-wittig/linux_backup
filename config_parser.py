@@ -4,7 +4,9 @@ import os
 
 class ConfigParser:
     def __init__(self):
-        self.filename = "config.json"
+        dirname = os.path.dirname(os.path.realpath(__file__))
+        print(os.path.join(dirname, "config.json"))
+        self.filename = os.path.join(dirname, "config.json")
         self.directories_to_backup = None
         self.gdrive_bin = None
         self.json_file = None

@@ -8,7 +8,7 @@ import json
 class LinuxBackup:
     def __init__(self):
         self.config_parser = ConfigParser()
-        self.out_dir = "backups/"
+        self.out_dir = os.path.join(os.path.dirname(__file__), "backups/")
         self.create_empty_dir()
         self.backup_name = "%s-%s.zip" % (os.getlogin(), time.strftime("%d-%m-%Y"))
         self.directorys = self.config_parser.directories_to_backup

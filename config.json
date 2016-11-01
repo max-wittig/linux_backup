@@ -3,6 +3,7 @@
   "gdrive_bin": "gdrive-linux-rpi",
   "directories_to_backup":
           [
-              "/home/pi/"
+              "/home/pi/Documents/",
+              "/var/www/html/"
           ]
 }

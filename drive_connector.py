@@ -9,5 +9,6 @@ class DriveConnector:
         self.gdrive_dir_id = self.config_parser.gdrive_dir_id
 
     def upload(self, filename):
-        os.system(os.path.join("gdrive_bin", self.gdrive_bin)
+        dirname = os.path.dirname(os.path.realpath(__file__))
+        os.system(os.path.join(dirname, "gdrive_bin", self.gdrive_bin)
                   + " upload --parent " + self.gdrive_dir_id + " " + filename)
