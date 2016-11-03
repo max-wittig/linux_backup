@@ -36,3 +36,6 @@ class ConfigParser:
     def get_gdrive_dir_id(self):
         return self.json_file["gdrive_dir_id"]
 
+    def get_clean_time(self):
+        return self.json_file["clean_time"]
+
